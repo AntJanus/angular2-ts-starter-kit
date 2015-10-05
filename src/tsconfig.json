@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "noLib": false
+  },
+  "files": [
+    "app.ts",
+    "typings/tsd.d.ts"
+  ]
+}
