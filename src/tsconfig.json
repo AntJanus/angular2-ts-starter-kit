@@ -6,7 +6,7 @@
     "noLib": false
   },
   "files": [
-    "app.ts",
+    "app/app.ts",
     "typings/tsd.d.ts"
   ]
 }
