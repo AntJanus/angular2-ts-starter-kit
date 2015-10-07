@@ -5,6 +5,7 @@ import 'es6-shim';
 
 import {Component, View, bootstrap} from 'angular2/angular2';
 import { MyService } from './services/sampleService';
+import { SubComponent } from './components/subcomponent/subcomponent';
 
 @Component({
   selector: 'my-app',
@@ -14,16 +15,18 @@ import { MyService } from './services/sampleService';
   template: `
     <ul>
       <li>{{ appStatus }}</li>
-      <li>{{ message }}</li>
+      <li>{{ serviceStatus }}</li>
+      <sub-component></sub-component>
     </ul>
-  `
+  `,
+  directives: [SubComponent]
 })
 class MyAppComponent {
   appStatus: string;
-  message: string;
+  serviceStatus: string;
 
   constructor(myService: MyService) {
-    this.message = myService.getMessage();
+    this.serviceStatus = myService.getMessage();
     this.appStatus = 'Application is working.';
   }
 }

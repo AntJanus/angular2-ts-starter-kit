@@ -17,4 +17,7 @@ gulp.task('copy', function() {
   ;
 });
 
-gulp.task('default', ['scripts', 'copy']);
+gulp.task('default', ['scripts', 'copy'], function() {
+  gulp.watch('./src/**/**.html', ['copy']);
+  gulp.watch('./src/**/**.ts', ['scripts']);
+});

@@ -1,5 +1,6 @@
 import { Injectable } from 'angular2/angular2';
 
+@Injectable()
 export class MyService {
   message: string;
 
@@ -7,7 +8,7 @@ export class MyService {
     this.message = "Services are working";
   }
 
-  getMessage() {
+  public getMessage() {
     return this.message;
   }
 

@@ -3,6 +3,7 @@
     "target": "ES6",
     "sourceMap": true,
     "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "noLib": false
   },
   "files": [
