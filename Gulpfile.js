@@ -18,7 +18,7 @@ gulp.task('scripts', function() {
 
 gulp.task('copy', function() {
 
-  return gulp.src('./src/**/**.html', {
+  return gulp.src(['./src/**/**.html', './src/**/**.css'], {
       base: './src'
     })
     .pipe(gulp.dest('./build'))
@@ -26,6 +26,6 @@ gulp.task('copy', function() {
 });
 
 gulp.task('default', ['scripts', 'copy', 'connect'], function() {
-  gulp.watch('./src/**/**.html', ['copy']);
+  gulp.watch(['./src/**/**.html', './src/**/**.css'], ['copy']);
   gulp.watch('./src/**/**.ts', ['scripts']);
 });
