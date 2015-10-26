@@ -11,6 +11,13 @@ Installation:
 
 ```bash
 npm install -g gulp typescript
+npm install
+```
+
+To run:
+
+```bash
+gulp
 ```
 
 ###Usage
