@@ -12,7 +12,7 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /\.ts(X?)$/, loader: 'babel-loader!ts-loader' }
+      { test: /\.ts(X?)$/, loader: 'ts-loader' }
     ]
   }
 };

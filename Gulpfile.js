@@ -10,7 +10,7 @@ gulp.task('scripts', function() {
 
 gulp.task('copy', function() {
 
-  return gulp.src('./src/**.html', {
+  return gulp.src(['./src/**.*', '!./src/**.ts'], {
       base: './src'
     })
     .pipe(gulp.dest('./build'))
@@ -18,6 +18,6 @@ gulp.task('copy', function() {
 });
 
 gulp.task('default', ['scripts', 'copy'], function() {
-  gulp.watch('./src/**/**.html', ['copy']);
+  gulp.watch(['./src/**/**.*', '!./src/**.ts'], ['copy']);
   gulp.watch('./src/**/**.ts', ['scripts']);
 });

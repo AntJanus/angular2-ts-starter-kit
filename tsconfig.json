@@ -1,13 +1,14 @@
 {
   "compilerOptions": {
-    "target": "ES6",
+    "target": "ES5",
     "sourceMap": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
+    "moduleResolution": "node",
     "noLib": false
   },
   "files": [
-    "app/app.ts",
-    "typings/tsd.d.ts"
+    "./src/app/app.ts",
+    "./src/typings/tsd.d.ts"
   ]
 }

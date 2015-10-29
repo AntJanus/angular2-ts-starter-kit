@@ -5,17 +5,5 @@
   "path": "typings",
   "bundle": "typings/tsd.d.ts",
   "installed": {
-    "angular2/angular2.d.ts": {
-      "commit": "30daf61172ff7160cb191fbdca095f5b8e3f752b"
-    },
-    "es6-promise/es6-promise.d.ts": {
-      "commit": "30daf61172ff7160cb191fbdca095f5b8e3f752b"
-    },
-    "rx/rx.d.ts": {
-      "commit": "30daf61172ff7160cb191fbdca095f5b8e3f752b"
-    },
-    "rx/rx-lite.d.ts": {
-      "commit": "30daf61172ff7160cb191fbdca095f5b8e3f752b"
-    }
   }
 }
