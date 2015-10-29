@@ -1,5 +1,13 @@
 var gulp = require('gulp');
 var webpack = require('gulp-webpack');
+var connect = require('gulp-connect');
+
+gulp.task('connect', ['copy'], function() {
+  connect.server({
+    root: ['./build'],
+    port: 3001
+  });
+});
 
 gulp.task('scripts', function() {
 	return gulp.src('./src/app.ts')
@@ -17,7 +25,7 @@ gulp.task('copy', function() {
   ;
 });
 
-gulp.task('default', ['scripts', 'copy'], function() {
-  gulp.watch(['./src/**/**.*', '!./src/**.ts'], ['copy']);
+gulp.task('default', ['scripts', 'copy', 'connect'], function() {
+  gulp.watch(['!./src/**/**.ts', './src/**/**.*'], ['copy']);
   gulp.watch('./src/**/**.ts', ['scripts']);
 });
