@@ -1,14 +1,16 @@
 {
   "compilerOptions": {
+    "outDir": ".",
     "target": "ES5",
     "sourceMap": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "moduleResolution": "node",
+    "module": "commonjs",
     "noLib": false
   },
   "files": [
-    "./src/app/app.ts",
-    "./src/typings/tsd.d.ts"
+    "./src/typings/tsd.d.ts",
+    "./src/app/app.ts"
   ]
 }
