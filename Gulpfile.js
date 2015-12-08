@@ -25,6 +25,8 @@ gulp.task('copy', function() {
   ;
 });
 
+gulp.task('build', ['scripts', 'copy']);
+
 gulp.task('default', ['scripts', 'copy', 'connect'], function() {
   gulp.watch(['!./src/**/**.ts', './src/**/**.*'], ['copy']);
   gulp.watch('./src/**/**.ts', ['scripts']);

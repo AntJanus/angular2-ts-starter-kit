@@ -10,6 +10,9 @@
   "bugs": {
     "url": "https://github.com/AntJanus/angular2-ts-starter-kit/issues"
   },
+  "scripts": {
+    "test": "gulp build"
+  },
   "homepage": "https://github.com/AntJanus/angular2-ts-starter-kit#readme",
   "dependencies": {
     "angular2": "2.0.0-alpha.42",
