@@ -15,7 +15,7 @@
   },
   "homepage": "https://github.com/AntJanus/angular2-ts-starter-kit#readme",
   "dependencies": {
-    "angular2": "2.0.0-alpha.42",
+    "angular2": "2.0.0-alpha.52",
     "es6-shim": "^0.33.6",
     "gulp": "^3.9.0",
     "gulp-connect": "^2.2.0",
@@ -24,6 +24,6 @@
     "ts-loader": "^0.7.1",
     "typescript": "^1.6.2",
     "webpack": "^1.12.2",
-    "zone.js": "^0.5.7"
+    "zone.js": "0.5.8"
   }
 }
