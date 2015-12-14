@@ -31,4 +31,6 @@ class MyAppComponent {
   }
 }
 
-bootstrap(MyAppComponent);
+document.addEventListener('DOMContentLoaded', function () {
+  bootstrap(MyAppComponent);
+});
