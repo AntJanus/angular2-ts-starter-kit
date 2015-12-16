@@ -1,11 +1,6 @@
-/// <reference path="../typings/tsd.d.ts" />
-import 'zone.js';
-import 'reflect-metadata';
-import 'es6-shim';
-
-import {Component, View, bootstrap} from 'angular2/angular2';
+import { Component, View } from 'angular2/core';
 import { MyService } from './services/sampleService';
-import { SubComponent } from './components/subcomponent/subcomponent';
+import { SubComponent } from './components/subcomponent/subcomponent.component';
 
 @Component({
   selector: 'my-app',
@@ -21,7 +16,7 @@ import { SubComponent } from './components/subcomponent/subcomponent';
   `,
   directives: [SubComponent]
 })
-class MyAppComponent {
+export class MyAppComponent {
   appStatus: string;
   serviceStatus: string;
 
@@ -30,5 +25,3 @@ class MyAppComponent {
     this.appStatus = 'Application is working.';
   }
 }
-
-bootstrap(MyAppComponent);
