@@ -1,6 +1,6 @@
 var gulp = require('gulp');
-var webpack = require('gulp-webpack');
 var connect = require('gulp-connect');
+var webpack = require('webpack-stream');
 
 gulp.task('connect', ['copy'], function() {
   connect.server({
