@@ -1,5 +1,3 @@
-var webpack = require('webpack');
-
 module.exports = {
   entry: './src/app/boot.ts',
   output: {
@@ -13,6 +11,7 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.tsx?$/, loader: 'ts-loader' }
-    ]
+    ],
+    noParse: [ /zone\.js\/dist\/.+/, /angular2\/bundles\/.+/ ]
   }
 };
