@@ -18,7 +18,7 @@ gulp.task('scripts', function() {
 
 gulp.task('copy', function() {
 
-  return gulp.src(['./src/**.*', '!./src/**.ts'], {
+  return gulp.src(['./src/**/**.*', '!./src/**/**.ts'], {
       base: './src'
     })
     .pipe(gulp.dest('./build'))
