@@ -1,4 +1,4 @@
-/// <reference path="../typings/tsd.d.ts" />
+/// <reference path="../../typings/browser.d.ts"/>
 
 import 'angular2/bundles/angular2-polyfills';
 

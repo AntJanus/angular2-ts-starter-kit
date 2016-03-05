@@ -1,4 +1,5 @@
 {
+  "compileOnSave": false,
   "compilerOptions": {
     "outDir": ".",
     "target": "ES5",
@@ -9,8 +10,9 @@
     "module": "commonjs",
     "noLib": false
   },
-  "files": [
-    "./src/typings/tsd.d.ts",
-    "./src/app/boot.ts"
+  "exclude": [
+    "node_modules",
+    "typings/main",
+    "typings/main.d.ts"
   ]
 }
