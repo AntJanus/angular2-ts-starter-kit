@@ -17,20 +17,28 @@
   },
   "homepage": "https://github.com/AntJanus/angular2-ts-starter-kit#readme",
   "dependencies": {
-    "angular2": "^2.0.0-beta.8",
-    "es6-promise": "3.0.2",
-    "es6-shim": "0.33.6",
-    "reflect-metadata": "0.1.2",
-    "rxjs": "^5.0.0-beta.2",
-    "zone.js": "^0.5.15"
+    "@angular/common": "2.0.0-rc.4",
+    "@angular/compiler": "2.0.0-rc.4",
+    "@angular/core": "2.0.0-rc.4",
+    "@angular/forms": "0.2.0",
+    "@angular/http": "2.0.0-rc.4",
+    "@angular/platform-browser": "2.0.0-rc.4",
+    "@angular/platform-browser-dynamic": "2.0.0-rc.4",
+    "@angular/router": "3.0.0-beta.1",
+    "@angular/router-deprecated": "2.0.0-rc.2",
+    "@angular/upgrade": "2.0.0-rc.4",
+    "core-js": "^2.4.0",
+    "reflect-metadata": "^0.1.3",
+    "rxjs": "5.0.0-beta.6",
+    "zone.js": "^0.6.12"
   },
   "devDependencies": {
-    "gulp": "3.9.0",
-    "gulp-connect": "2.2.0",
-    "ts-loader": "^0.7.2",
-    "typescript": "1.7.3",
-    "typings": "^0.6.10",
-    "webpack": "^1.12.2",
-    "webpack-stream": "^3.1.0"
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "ts-loader": "^0.8.2",
+    "typescript": "^1.8.10",
+    "typings": "^1.3.2",
+    "webpack": "^1.13.1",
+    "webpack-stream": "^3.2.0"
   }
 }
