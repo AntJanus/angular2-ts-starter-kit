@@ -1,8 +1,7 @@
-/// <reference path="../../typings/browser.d.ts"/>
+require('zone.js');
+import 'core-js/shim';
 
-import 'angular2/bundles/angular2-polyfills';
-
-import { bootstrap } from 'angular2/platform/browser';
+import { bootstrap } from '@angular/platform-browser-dynamic';
 import { MyAppComponent } from './app.component';
 
 bootstrap(MyAppComponent);
