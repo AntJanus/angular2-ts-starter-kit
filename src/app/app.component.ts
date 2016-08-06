@@ -1,12 +1,10 @@
-import { Component, View } from 'angular2/core';
-import { MyService } from './services/sampleService';
+import { Component } from '@angular/core';
+import { MyService } from './services/sample.service';
 import { SubComponent } from './components/subcomponent/subcomponent.component';
 
 @Component({
   selector: 'my-app',
-  bindings: [MyService]
-})
-@View({
+  providers: [MyService],
   template: `
     <ul>
       <li>{{ appStatus }}</li>
