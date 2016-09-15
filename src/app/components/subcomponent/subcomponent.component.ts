@@ -1,11 +1,9 @@
-import {Component, View} from 'angular2/core';
+import { Component } from '@angular/core';
 
 import { MyService } from '../../services/sampleService';
 
 @Component({
-  selector: 'sub-component'
-})
-@View({
+  selector: 'sub-component',
   template: `
     <li>Subcomponent works.</li>
   `
