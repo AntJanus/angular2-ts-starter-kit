@@ -13,5 +13,6 @@ module.exports = {
       { test: /\.tsx?$/, loader: 'ts-loader' }
     ],
     noParse: [ /zone\.js\/dist\/.+/, /angular2\/bundles\/.+/ ]
-  }
+  },
+  devtool: 'source-map'
 };
