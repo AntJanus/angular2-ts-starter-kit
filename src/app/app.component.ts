@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
 import { MyService } from './services/sample.service';
-import { SubComponent } from './components/subcomponent/subcomponent.component';
 
 @Component({
   selector: 'my-app',
-  providers: [MyService],
   template: `
     <ul>
       <li>{{ appStatus }}</li>
@@ -12,9 +10,8 @@ import { SubComponent } from './components/subcomponent/subcomponent.component';
       <sub-component></sub-component>
     </ul>
   `,
-  directives: [SubComponent]
 })
-export class MyAppComponent {
+export class AppComponent {
   appStatus: string;
   serviceStatus: string;
 
