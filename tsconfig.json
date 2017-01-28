@@ -8,7 +8,8 @@
     "emitDecoratorMetadata": true,
     "moduleResolution": "node",
     "module": "commonjs",
-    "noLib": false
+    "lib": [ "es2015", "dom" ],
+    "types": ["node"]
   },
   "exclude": [
     "node_modules",
